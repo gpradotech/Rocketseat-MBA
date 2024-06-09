@@ -1,7 +1,7 @@
 # Rocketseat-MBA
 Projects and exercises developed by me during Rocketseat's MBA.
 
-01 - Fundamentos do Desenvolvimento Web (72h) <br>
+<strong>01 - Fundamentos do Desenvolvimento Web (72h)</strong><br>
 - Fundamentos da Programação Web
 - Git e Github 
 - HTML, CSS e Javascript do básico ao avançado
