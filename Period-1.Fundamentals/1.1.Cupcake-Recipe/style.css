@@ -1,3 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/bg-image.jpg);
+  background-size: cover;
+}
+
+#page {
+  margin: 48px auto;
+  max-width: 800px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #F0E8C2;
+}
+
 img {
   border-radius: 16px;
 }
