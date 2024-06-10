@@ -36,8 +36,8 @@ VAR SETTINGS ///////////////////////////////////
   --font-family: "Poppins", sans-serif;
   --text-lg: bold 32px/125% var(--font-family);
   --text: 16px/150% var(--font-family);
-  --text-md: 14px/175% var(--font-family);
-  --text-sm: 12px/175% var(--font-family);
+  --text-md: 14px/170% var(--font-family);
+  --text-sm: 12px/170% var(--font-family);
 }
 
 /* ---------------------------------------------
@@ -74,4 +74,22 @@ background-color: var(--background-color);
 
 .bg-surface-color {
   background-color: var(--surface-color);
+}
+
+button {
+  background-color: var(--brand-color);
+  color: var(--background-color);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 12px;
+  cursor: pointer;
+
+  transition: background-color 200ms;
+}
+
+button:hover {
+  background-color: #d14b39;
 }
