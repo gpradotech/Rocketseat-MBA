@@ -1,12 +1,23 @@
+/* ---------------------------------------------
+RESET SETTINGS /////////////////////////////////
+--------------------------------------------- */
 * {
+  /* /// reset /// */
+  /* box model */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  /* fonts */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ---------------------------------------------
+VAR SETTINGS ///////////////////////////////////
+--------------------------------------------- */
 :root {
+  /* /// colors /// */
   /* product */
   --brand-color: #EF5F4C;
 
@@ -19,9 +30,30 @@
   /* text */
   --text-color-primary: #313131;
   --text-color-secondary: #6C6C6C;
+
+  
+  /* fonts */
+  --font-family: "Poppins", sans-serif;
+  --text-lg: bold 3.2rem/125% var(--font-family);
+  --text: 1.6rem/150% var(--font-family);
+  --text-md: 1.4rem/175% var(--font-family);
+  --text-sm: 1.2rem/175% var(--font-family);
 }
 
-body {
+/* ---------------------------------------------
+GLOBAL SETTINGS ////////////////////////////////
+--------------------------------------------- */
+:root {
+  /* /// typography /// */
+  /* reset size */
+  font-size: clamp(40%, 1% + 2vw, 62.5%); /* 10px */
+  
+  /* font */
+  font: var(--text);
   color: var(--text-color-secondary);
+  }
+  
+  body {
+  /* viewport */
   background-color: var(--background-color);
 }
