@@ -34,26 +34,44 @@ VAR SETTINGS ///////////////////////////////////
   
   /* fonts */
   --font-family: "Poppins", sans-serif;
-  --text-lg: bold 3.2rem/125% var(--font-family);
-  --text: 1.6rem/150% var(--font-family);
-  --text-md: 1.4rem/175% var(--font-family);
-  --text-sm: 1.2rem/175% var(--font-family);
+  --text-lg: bold 32px/125% var(--font-family);
+  --text: 16px/150% var(--font-family);
+  --text-md: 14px/175% var(--font-family);
+  --text-sm: 12px/175% var(--font-family);
 }
 
 /* ---------------------------------------------
 GLOBAL SETTINGS ////////////////////////////////
 --------------------------------------------- */
+/* /// typography /// */
 :root {
-  /* /// typography /// */
-  /* reset size */
-  font-size: clamp(40%, 1% + 2vw, 62.5%); /* 10px */
-  
-  /* font */
-  font: var(--text);
-  color: var(--text-color-secondary);
-  }
-  
-  body {
-  /* viewport */
-  background-color: var(--background-color);
+/* font */
+font: var(--text);
+color: var(--text-color-secondary);
+}
+
+/* links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--brand-color);
+}
+
+body {
+/* viewport */
+background-color: var(--background-color);
+}
+
+.container {
+  padding-inline: 32px;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
 }
