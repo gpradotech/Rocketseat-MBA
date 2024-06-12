@@ -12,3 +12,33 @@ RESET SETTINGS /////////////////////////////////
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ---------------------------------------------
+VAR SETTINGS ///////////////////////////////////
+--------------------------------------------- */
+:root {
+  /* /// colors /// */
+  /* product */
+  --brand-color-light: #60A5FA;
+  --brand-color-dark: #1D4ED8;
+
+  /* base */
+  --bg-color: #0F172A;
+  --stroke-color: #1E293B;
+
+  /* text */
+  --text-color-primary: #F1F5F9;
+  --text-color-secondary: #CBD5E1;
+
+
+  /* /// fonts /// */
+
+}
+
+/* ---------------------------------------------
+GLOBAL SETTINGS ////////////////////////////////
+--------------------------------------------- */
+body {
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
+}
