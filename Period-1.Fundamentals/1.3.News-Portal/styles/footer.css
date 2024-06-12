@@ -1,0 +1,14 @@
+footer {
+  transform: translateY(-40px);
+  grid-template-areas: footer;
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid var(--stroke-color);
+  opacity: .4;
+
+  transition: opacity 300ms linear;
+}
+
+footer:hover {
+  opacity: 1;
+}
