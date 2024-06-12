@@ -55,7 +55,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  transition: color 200ms;
+  transition: all 200ms;
 }
 
 a:hover {
@@ -80,6 +80,7 @@ img {
 
 main {
   margin-top: 40px;
+  gap: 40px;
 }
 
 .content-tag {
