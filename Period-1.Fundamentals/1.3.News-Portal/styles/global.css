@@ -44,12 +44,27 @@ VAR SETTINGS ///////////////////////////////////
 /* ---------------------------------------------
 GLOBAL SETTINGS ////////////////////////////////
 --------------------------------------------- */
+/* utility-first */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+/* bg and global font */
 body {
   font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
 }
 
+/* links */
 a {
   text-decoration: none;
   color: inherit;
@@ -60,6 +75,14 @@ a:hover {
   color: var(--brand-color-light);
 }
 
+/* titles and subtitles */
 h1, h2, h3 {
   font: inherit;
+}
+
+/* container */
+.container {
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
 }
