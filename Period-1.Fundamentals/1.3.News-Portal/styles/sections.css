@@ -21,6 +21,8 @@ section header {
 }
 
 #featured {
+  grid-area: featured;
+  
   img {
     height: 100%;
     object-fit: cover;
@@ -67,13 +69,15 @@ section header {
 }
 
 #weekly {
-  
+  grid-area: weekly;
+
   &>div {
     grid-template-columns: repeat(4, 1fr);
   }
 
   img {
     height: 160px;
+    width: 100%;
   }
 
   figure {
@@ -95,4 +99,78 @@ section header {
       -webkit-box-orient: vertical;
     }
   }
+}
+
+#ai {
+  grid-area: ai;
+  
+  img {
+    max-width: 180px;
+    max-height: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-block: 8px 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
+#ads {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+#more {
+  background-color: var(--stroke-color);
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 32px;
+
+  header {
+    padding-top: 0;
+  }
+
+  img {
+    width: 88px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-top: 8px;
+    font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  transform: translateY(-40px);
+  grid-template-areas: footer;
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid var(--stroke-color);
 }
