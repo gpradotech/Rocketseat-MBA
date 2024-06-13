@@ -1,3 +1,7 @@
-@import url(global/index.css);
-@import url(variables/index.css);
-@import url(global.css);
+@import url(1.Settings/index.css);
+@import url(2.Tools/index.css);
+@import url(3.Generic/index.css);
+@import url(4.Elements/index.css);
+@import url(5.Objects/index.css);
+@import url(6.Components/index.css);
+@import url(7.Trumps/index.css);
