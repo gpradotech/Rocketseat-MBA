@@ -109,7 +109,7 @@
             <!-- input cep -->
             <div class="input-wrapper">
               <label for="cep">CEP</label>
-              <input type="text" id="cep" name="cep">
+              <input type="text" id="cep" name="cep" placeholder="00000-000">
             </div>
             <!-- subgroup 1 -->
             <div class="flex">
@@ -142,6 +142,30 @@
               
             </div>
           </fieldset>
+          <!-- group 3 -->
+           <fieldset class="guardian">
+            <legend>Informações do responsável</legend>
+            <!-- input guardian name -->
+            <div class="input-wrapper">
+              <label for="guardian">Nome do responsável</label>
+              <input type="text" id="guardian" name="guardian" placeholder="Seu nome completo">
+              <small>Principal responsável legal e contato de emergência.</small>
+            </div>
+            <!-- input guardian phone -->
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(21) 9 9999-9999">
+            </div>
+            <!-- input guardian mail -->
+            <div class="input-wrapper">
+              <label for="mail">E-mail</label>
+              <input type="email" id="mail" name="mail" placeholder="alguém@email.com" required>
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="Erro">
+                <span>Insira um endereço de e-mail válido.</span>
+              </div>
+            </div>
+           </fieldset>
         </form>
       </div>
     </main>
