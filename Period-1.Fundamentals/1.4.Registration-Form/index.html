@@ -143,29 +143,53 @@
             </div>
           </fieldset>
           <!-- group 3 -->
-           <fieldset class="guardian">
-            <legend>Informações do responsável</legend>
-            <!-- input guardian name -->
-            <div class="input-wrapper">
-              <label for="guardian">Nome do responsável</label>
-              <input type="text" id="guardian" name="guardian" placeholder="Seu nome completo">
-              <small>Principal responsável legal e contato de emergência.</small>
+          <fieldset class="guardian">
+          <legend>Informações do responsável</legend>
+          <!-- input guardian name -->
+          <div class="input-wrapper">
+            <label for="guardian">Nome do responsável</label>
+            <input type="text" id="guardian" name="guardian" placeholder="Seu nome completo">
+            <small>Principal responsável legal e contato de emergência.</small>
+          </div>
+          <!-- input guardian phone -->
+          <div class="input-wrapper">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(21) 9 9999-9999">
+          </div>
+          <!-- input guardian mail -->
+          <div class="input-wrapper">
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" name="mail" placeholder="alguém@email.com" required>
+            <div class="error">
+              <img src="assets/icons/alert-circle.svg" alt="Erro">
+              <span>Insira um endereço de e-mail válido.</span>
             </div>
-            <!-- input guardian phone -->
+          </div>
+          </fieldset>
+          <!-- group 4: radios -->
+          <fieldset class="enroll-options">
+            <legend>Opções de matrícula</legend>
             <div class="input-wrapper">
-              <label for="phone">Telefone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(21) 9 9999-9999">
-            </div>
-            <!-- input guardian mail -->
-            <div class="input-wrapper">
-              <label for="mail">E-mail</label>
-              <input type="email" id="mail" name="mail" placeholder="alguém@email.com" required>
-              <div class="error">
-                <img src="assets/icons/alert-circle.svg" alt="Erro">
-                <span>Insira um endereço de e-mail válido.</span>
+              <label>Selecione o turno de estudo</label>
+
+              <div class="radio-wrapper">
+                <!-- option: morning -->
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" id="morning" value="morning">
+                  <img src="assets/icons/sun-cloud-02.svg" alt="">
+                  <label for="morning">Manhã</label>
+                </div>
+                <!-- option: afternoon -->
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" id="afternoon" value="afternoon">
+                  <img src="assets/icons/sun-cloud-02.svg" alt="">
+                  <label for="afternoon">Tarde</label>
+                </div>
               </div>
             </div>
-           </fieldset>
+          </fieldset>
         </form>
       </div>
     </main>
