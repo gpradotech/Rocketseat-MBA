@@ -2,3 +2,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+a:hover {
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-secondary-mid) 0%,
+    var(--color-brand-primary-mid) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
