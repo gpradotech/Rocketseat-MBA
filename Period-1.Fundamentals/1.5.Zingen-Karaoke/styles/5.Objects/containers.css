@@ -1,0 +1,14 @@
+.container {
+  --c-max-width: var(--dv-mobile-width);
+  --c-padding: var(--px-lg);
+
+  width: min(var(--c-max-width), 100% - var(--c-padding) * 2); /* vai buscar o mínimo entre a tela mobile (375px) e 100% da largura da tela do navegador subtraído do padding dos dois lados */
+  margin-inline: auto;
+  border: 1px solid violet;
+}
+
+@media (width >= 80em) {
+  .container {
+    --c-max-width: var(--dv-desktop-width);
+  }
+}

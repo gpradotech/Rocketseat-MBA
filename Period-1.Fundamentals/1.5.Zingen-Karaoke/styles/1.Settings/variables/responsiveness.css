@@ -1,0 +1,29 @@
+/* desktop */
+@media (width >= 80em) /* 80*16 = 1280px */ {
+  /*/// variables ///*/
+  :root {
+    /* fonts */
+      --fs-lg: 2rem;
+      --fs-xl: 3rem;
+      --fs-2xl: 4rem;
+
+    /* spaces */
+      --py-base: var(--space-24); /* 1.5rem */
+      --py-lg: var(--space-40); /* 2.5rem */
+      --py-xl: var(--space-80); /* 5rem */
+    
+      --px-lg: var(--space-32); /* 2rem */
+  }
+
+  /*/// utilities ///*/
+    /* toggle-view */
+      .desktop-only {
+        display: initial;
+      }
+
+    /* columns */
+      .even-colunns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+      }
+}

@@ -1,3 +1,7 @@
+@import url(responsiveness.css);
+
 @import url(colors.css);
+@import url(devices.css);
 @import url(fonts.css);
+@import url(spaces.css);
 @import url(transitions.css);
