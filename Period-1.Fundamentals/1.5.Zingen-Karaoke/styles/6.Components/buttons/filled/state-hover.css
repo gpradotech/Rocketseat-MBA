@@ -1,0 +1,9 @@
+.btn:hover {
+  --btn-bg-color: linear-gradient(
+    90deg,
+    var(--color-brand-secondary-mid) 0%, 
+    var(--color-brand-primary-mid) 100%
+  );
+
+  --btn-txt-color: var(--surface-color);
+}

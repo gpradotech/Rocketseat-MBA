@@ -1,4 +1,16 @@
-.even-colunns {
+.even-columns {
   display: grid;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-1 {
   gap: 1rem;
 }
