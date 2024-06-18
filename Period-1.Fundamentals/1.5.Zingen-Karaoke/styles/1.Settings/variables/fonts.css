@@ -14,3 +14,19 @@
   --fs-xl: 1.5rem;
   --fs-2xl: 2.5rem;
 }
+
+@media (width >= 80em)  {
+  :root {
+    /* fonts */
+      --fs-lg: 2rem;
+      --fs-xl: 3rem;
+      --fs-2xl: 4rem;
+
+    /* spaces */
+      --py-base: var(--space-24); /* 1.5rem */
+      --py-lg: var(--space-40); /* 2.5rem */
+      --py-xl: var(--space-80); /* 5rem */
+    
+      --px-lg: var(--space-32); /* 2rem */
+  }
+}
