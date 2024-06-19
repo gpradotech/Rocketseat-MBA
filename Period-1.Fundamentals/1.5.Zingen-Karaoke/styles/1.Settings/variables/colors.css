@@ -10,6 +10,12 @@
     --color-brand-secondary-dark: #;
     --color-brand-secondary-low: #;
 
+    --degrade-brand-primary: linear-gradient(
+    90deg,
+    var(--color-brand-secondary-mid) 0%, 
+    var(--color-brand-primary-mid) 100%
+  );
+
   /* base */
     --color-grey-050: #;
     --color-grey-100: #F4F4F5; 
