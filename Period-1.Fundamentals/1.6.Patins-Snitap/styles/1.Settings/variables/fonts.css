@@ -1,0 +1,21 @@
+html {
+  /* family */
+  --ff-sans-primary: 'Syne', sans-serif;
+  --ff-sans-secondary: 'Montserrat', sans-serif;
+
+  /* weight */
+  --fw-medium: 500;
+  --fw-bold: 700;
+  
+  /* size */
+  --fs-xl: 4rem;
+  --fs-lg: 2.5rem;
+  --fs-base: 1rem;
+  --fs-sm: 0.875rem;
+
+  /* set tokens */
+  --font-heading-1: var(--fw-bold) var(--fs-xl)/1.25 var(--ff-sans-primary);
+  --font-heading-2: var(--fw-bold) var(--fs-lg)/1.2 var(--ff-sans-primary);
+  --font-button-label: var(--fw-medium) var(--fs-base)/1.5 var(--ff-sans-secondary);
+  --font-span: var(--fw-medium) var(--fs-sm)/1.5 var(--ff-sans-secondary);
+}

@@ -1,0 +1,18 @@
+:root {
+  /* brand */
+    --color-brand-sun-mid: #FFCD1E;
+    --color-brand-sky-mid: #06B6D4;
+    --color-brand-sky-light: #67E8F9;
+    --color-brand-joy-mid: #DB2777;
+    --color-brand-joy-light: #F472B6;
+    --color-brand-leaf-mid: #16A34A;
+
+  /* neutrals */
+    --color-white: #FAFAFA;
+    --color-black: #000;
+
+  /* colors to elements tokens */
+    --text-color-primary: var(--color-black);
+    --surface-color: var(--color-black);
+    --bg-color: var(--color-white);
+}
