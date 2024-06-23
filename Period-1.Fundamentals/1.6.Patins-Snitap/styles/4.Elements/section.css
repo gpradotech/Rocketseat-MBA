@@ -1,0 +1,35 @@
+section {
+  &#hero {
+    max-width: 80rem;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    margin-inline: auto;
+
+    & h1 {
+      max-width: 40rem;
+
+      & div {
+        /* border: 2px solid lime; */
+        display: inline-block;
+        overflow: hidden;
+        height: 5rem;
+        width: min-content;
+        vertical-align: bottom;
+      }
+
+      & span {
+        /* border: 1px solid red; */
+        font: var(--font-heading-1);
+        display: block;
+        animation: slideUp calc(2s * 4) infinite ease;
+
+        &:nth-child(1),
+        &:nth-child(4) { color: var(--color-brand-sky-mid); };
+        &:nth-child(2) { color: var(--color-brand-joy-mid); };
+        &:nth-child(3) { color: var(--color-brand-leaf-mid); };
+
+      }
+    }
+
+  }
+}
