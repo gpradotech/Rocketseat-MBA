@@ -5,6 +5,11 @@ section {
     padding: 2.5rem 2rem;
     margin-inline: auto;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
     & h1 {
       max-width: 40rem;
 
@@ -21,7 +26,7 @@ section {
         /* border: 1px solid red; */
         font: var(--font-heading-1);
         display: block;
-        animation: slideUp calc(2s * 4) infinite ease;
+        animation: slideUp calc(3s * 4) 1.5s infinite ease;
 
         &:nth-child(1),
         &:nth-child(4) { color: var(--color-brand-sky-mid); };
@@ -75,5 +80,107 @@ section {
       }
     }
 
+    & #patins {
+      display: block;
+      width: 100%;
+      max-width: 30.5rem;
+      height: 30.5rem;
+      
+      /* border: 6px solid deeppink; */
+
+      & .content {
+        /* border: 6px solid black; */
+
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      & img {
+        position: absolute;
+        width: 100%;
+      }
+
+      & img[src*="ellipse"] {
+        width: 94%;
+        top: 3%;
+        left: 3%;
+
+        transform: translateX(200%);
+        animation: slideIn 3s 200ms ease forwards;
+      }
+
+      & img[src*="patins"] {
+        z-index: 1;
+
+        transform: translateX(200%);
+        animation: slideIn 3s ease forwards;
+      }
+
+      & img[src*="stars-1"] {
+        max-width: 5.5rem;
+        top: 30%;
+        z-index: 0;
+
+        opacity: 0;
+        transform: translateX(400%);
+        animation: 
+          slideIn 2s 800ms ease both, 
+          appear 100ms 800ms both;
+      }
+
+      & img[src*="stars-2"] {
+        max-width: 2.5rem;
+        right: 0;
+        bottom: 35%;
+
+        transform: translateX(400%);
+        animation: slideIn 2.2s 800ms ease both;
+      }
+    }
+  }
+}
+
+@media (width < 80em) {
+  section {
+    &#hero {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2rem;
+
+      & h1 {
+        line-height: 1.15;
+        text-align: center;
+
+        & span {
+          text-align: left;
+        }
+      }
+
+      & .buttons {
+        flex-direction: column-reverse;
+      }
+
+      & #patins {
+        height: 19.5rem;
+        overflow: hidden;
+        min-width: 100vw;
+        padding: 2.5rem;
+        /* border: 2px solid black; */
+
+        & img {
+          height: 95%;
+          object-fit: contain;
+
+          &[src*="stars"] {
+            width: clamp(10%, 1rem, 20%);
+          }
+        }
+      }
+
+      & .content {
+        /* border: 2px solid deeppink; */
+      }
+    }
   }
 }
