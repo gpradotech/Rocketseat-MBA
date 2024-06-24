@@ -1,0 +1,4 @@
+:root {
+  --transition-transform-default: transform 500ms;
+  --transition-scale-default: all 200ms linear;
+}
