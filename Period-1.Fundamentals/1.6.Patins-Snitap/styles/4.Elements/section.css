@@ -303,3 +303,24 @@ section {
     }
   }
 }
+
+@media (prefers-reduced-motion) {
+  section {
+    &#hero h1 span {
+          animation: none;
+    }
+
+    &#hero #patins * img {
+      animation-duration: 0s !important;
+      animation-delay: 0s !important;
+      }
+    
+    &.banner .scroller .rolling {
+      animation: none;
+    }
+
+    &.banner .bg-gradient-animate {
+      animation: none;
+    }
+  }
+}

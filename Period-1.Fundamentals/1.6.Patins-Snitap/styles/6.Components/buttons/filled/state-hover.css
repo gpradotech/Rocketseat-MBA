@@ -3,3 +3,10 @@
     transform: scale(1.1);
   }
 }
+
+@media (prefers-reduced-motion) {
+  .button:hover {
+    transform: scale(1);
+    outline: 2px solid var(--color-brand-joy-mid);
+  }
+}
