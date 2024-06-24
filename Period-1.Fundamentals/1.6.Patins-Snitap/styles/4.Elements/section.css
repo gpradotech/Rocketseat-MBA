@@ -298,6 +298,10 @@ section {
 
       & .buttons {
         flex-direction: column-reverse;
+
+        & .buy, & .play {
+          justify-content: center;
+        }
       }
 
       & #patins {
@@ -322,6 +326,14 @@ section {
       & .content {
         display: flex;
         flex-direction: column;
+      }
+
+      & figure {
+        animation-range: 50px 200px;
+
+        &[data-delay] {
+          animation-range: 50px 200px ;
+        }
       }
     }
   }
