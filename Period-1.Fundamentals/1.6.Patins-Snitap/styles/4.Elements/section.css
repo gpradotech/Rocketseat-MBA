@@ -8,7 +8,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     & h1 {
       max-width: 40rem;
@@ -90,14 +90,15 @@ section {
         opacity: 0;
         transform: translateX(400%);
         animation: 
-          slideIn 2s 800ms ease both, 
-          appear 100ms 800ms both;
+        appear 100ms 800ms both,
+        slideIn 2.2s 800ms ease both; 
       }
 
       & img[src*="stars-2"] {
         max-width: 2.5rem;
         right: 0;
         bottom: 35%;
+        opacity: 0;
 
         transform: translateX(400%);
         animation: slideIn 2.2s 800ms ease both;
@@ -257,7 +258,7 @@ section {
         text-align: center;
 
         & span {
-          text-align: left;
+          text-align: center;
         }
       }
 
@@ -303,6 +304,9 @@ section {
     }
   }
 }
+
+@media (min-width: 614px) { section#hero h1 span {text-align: left;}}
+
 
 @media (prefers-reduced-motion) {
   section {
