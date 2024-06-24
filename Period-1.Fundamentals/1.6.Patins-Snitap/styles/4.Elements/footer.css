@@ -105,3 +105,35 @@ footer {
     }
   }
 }
+
+@media (width < 80em) {
+  footer {
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+
+    & > div {
+      margin-inline: auto;
+    }
+    
+    & nav {
+      align-items: flex-start;
+      border-top: 1px solid #00000020;
+      border-bottom: 1px solid #00000020;
+    }
+
+    & .social-links {
+      gap: .5rem;
+      
+      & a {
+        width: 3.5rem;
+        height: 3.5rem;
+  
+        & img {
+          width: 2rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}
