@@ -1,0 +1,5 @@
+@keyframes bgGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
