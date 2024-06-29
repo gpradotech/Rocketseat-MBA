@@ -5,7 +5,18 @@
     --color-surface-hover: var(--color-brand-blue-50);
     --color-surface-active: var(--color-brand-blue-200);
     --color-surface-disable: var(--color-brand-blue-200);
+
+  /* stroke & outline */
+    --color-stroke-separator: var(--color-brand-blue-1000);
+
   /* text */
-    --color-text-highlight: var(--color-brand-blue-800);
-    --color-text-mid: var(--color-brand-blue-900);
+    /* colors */
+      --color-text-highlight: var(--color-brand-blue-1000);
+      --color-text-mid: var(--color-brand-blue-950);
+    
+      /* fonts */
+      --font-span-index: var(--fw-regular) var(--fs-sm)/1.3 var(--ff-sans);
+      --font-span-tagHeader: var(--fw-semiBold) var(--fs-sm)/1.25 var(--ff-sans);
+      --font-span-tagSub: var(--fw-regular) var(--fs-xs)/1 var(--ff-sans);
+      --letterSpace-md: var(--ls-md);
 }

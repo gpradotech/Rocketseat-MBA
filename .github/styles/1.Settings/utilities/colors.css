@@ -1,0 +1,19 @@
+.blue {
+  background-color: var(--color-brand-blue-mid);
+}
+
+.green {
+  background-color: var(--color-brand-green-mid);
+}
+
+.orange {
+  background-color: var(--color-brand-orange-mid);
+}
+
+.pink {
+  background-color: var(--color-brand-pink-mid);
+}
+
+.yellow {
+  background-color: var(--color-brand-yellow-mid);
+}

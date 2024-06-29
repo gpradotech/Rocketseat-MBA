@@ -1,0 +1,73 @@
+.cardPeriod {
+  background-color: var(--color-surface-background);
+  border: 2px solid transparent;
+  padding: 1.5rem 3rem 1.5rem 1.5rem;
+  border-radius: 0.5rem;
+
+  display: grid;
+  height: 100%;
+  gap: 1rem;
+
+  overflow: hidden;
+
+  & .cardPeriod-head {
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & .cardPeriod-title {
+      color: var(--color-text-highlight);
+    }
+    
+    & .cardPeriod-index {
+      font: var(--font-span-index);
+      color: var(--color-text-highlight);
+      text-align: right;
+    }
+  }
+
+  & .cardPeriod-info {
+    display: grid;
+    gap: .5rem;
+
+    & .cardPeriod-projects {
+      text-transform: uppercase;
+      font: var(--font-span-tagHeader);
+      color: var(--color-text-mid);
+      letter-spacing: var(--letterSpace-md);
+    }
+    
+    & .cardPeriod-date {
+      text-transform: uppercase;
+      font: var(--font-span-tagSub);
+      color: var(--color-text-mid);
+      letter-spacing: var(--letterSpace-md);
+      opacity: .85;
+    }
+  }
+
+  & .cardPeriod-color {
+    width: 1.5rem;
+    height: 100%;
+    right: 0;
+
+    transition: all var(--transition-fast);
+  }
+}
+
+a:not(.half-visible) {
+  & .cardPeriod:hover {
+    border: 2px solid var(--color-brand-yellow-mid);
+
+    & .cardPeriod-title {
+      text-decoration: underline;
+    }
+
+    & .cardPeriod-color {
+      width: 1.75rem;
+    }
+  }
+}
+
+a.half-visible {
+  cursor: no-drop;
+}

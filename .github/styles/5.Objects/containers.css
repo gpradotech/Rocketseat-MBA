@@ -1,0 +1,7 @@
+.body {
+  width: 100vw;
+  max-width: 1024px;
+  gap: 2rem;
+
+  grid-template-columns: 1fr 2fr;
+}

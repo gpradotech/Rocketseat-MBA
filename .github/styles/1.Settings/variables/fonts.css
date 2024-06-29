@@ -16,4 +16,7 @@
     --fs-default: 16px;
     --fs-sm: 14px;
     --fs-xs: 12px;
+
+  /* letter space */
+    --ls-md: 0.0612rem;
 }
