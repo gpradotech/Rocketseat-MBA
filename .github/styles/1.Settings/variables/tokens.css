@@ -1,0 +1,11 @@
+:root {
+  /* background colors */
+    --color-body-background: var(--color-brand-blue-1000);
+    --color-surface-background: var(--color-neutral-white);
+    --color-surface-hover: var(--color-brand-blue-50);
+    --color-surface-active: var(--color-brand-blue-200);
+    --color-surface-disable: var(--color-brand-blue-200);
+  /* text */
+    --color-text-highlight: var(--color-brand-blue-800);
+    --color-text-mid: var(--color-brand-blue-900);
+}
