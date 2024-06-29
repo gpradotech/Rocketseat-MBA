@@ -4,4 +4,6 @@
 /* @import url(a.css); */
 /* @import url(span.css); */
 /* @import url(ul.css); */
+@import url(header.css);
 @import url(main.css);
+@import url(footer.css);

@@ -1,7 +1,28 @@
 .body {
   width: 100vw;
-  max-width: 1024px;
-  gap: 2rem;
+  max-width: 64rem;
+
+  padding: 4rem 0 3rem;
+  margin-inline: auto;
 
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, auto);
+
+  gap: 2rem;
+}
+
+@media (max-width: 64rem) {
+  .body {
+    padding-top: 2rem;
+    padding-inline: 3rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  .body {
+    padding-inline: 1.5rem;
+  }
 }

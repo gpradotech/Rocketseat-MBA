@@ -1,4 +1,13 @@
 main {
+  grid-column: 2/3;
+  grid-row: 1/4;
+
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+
+@media (max-width: 23.4375rem) {
+  main {
+    grid-template-columns: 1fr;
+  }
 }

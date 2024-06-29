@@ -1,0 +1,6 @@
+header {
+  width: 100%;
+  
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
