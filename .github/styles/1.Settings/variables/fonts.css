@@ -10,9 +10,10 @@
     --fw-extraBold: 800;
 
   /* font size */
-    --fs-xl: 2rem;
-    --fs-lg: 1.5rem;
-    --fs-md: 1.25rem;
-    --fs-default: 1rem;
-    --fs-sm: 0.875rem;
+    --fs-display: 32px;
+    --fs-lg: 20px;
+    --fs-md: 18px;
+    --fs-default: 16px;
+    --fs-sm: 14px;
+    --fs-xs: 12px;
 }
