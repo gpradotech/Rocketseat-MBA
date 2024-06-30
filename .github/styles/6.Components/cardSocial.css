@@ -1,0 +1,101 @@
+.cardSocial {
+  gap: 3rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+
+  margin-top: 2rem;
+
+  border: 2px solid transparent;
+  position: relative;
+  z-index: 10;
+  transition: all var(--transition-mid);
+
+  
+  &:hover {
+    background-color: rgba(191, 219, 254, .1);
+    border: 2px solid var(--color-brand-blue-200);
+    transition: all var(--transition-mid);
+  }
+
+  & .footerBio {
+    align-items: center;
+    gap: 1rem;
+
+    & .footerBio-avatar {
+      border-radius: 50%;
+      width: 4rem;
+      border: 0.125rem solid var(--color-neutral-white);
+    }
+
+    & .footerBio-text {
+      display: grid;
+      gap: .25rem;
+
+      & span {
+        color: var(--color-neutral-white, #FFF);
+        font: var(--fw-bold) var(--fs-lg)/1.25 var(--ff-sans);
+      }
+
+      & span + span {
+        color: var(--color-brand-blue-200, #BFDBFE);
+        font: var(--fw-semiBold) var(--fs-default)/1.25 var(--ff-sans);
+      }
+    }
+  }
+
+  & .footerSocial {
+    display: grid;
+    gap: 1rem;
+
+    & span {
+      color: var(--color-brand-blue-200, #BFDBFE);
+      font: var(--fw-regular) var(--fs-default)/1.25 var(--ff-sans);
+    }
+
+    & .footerSocial-Buttons {
+      display: flex;
+      gap: .5rem;
+    }
+
+    & .footerSocial-Button {
+      display: flex;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;  
+      
+      border-radius: 0.5rem;
+      border: 0.125rem solid transparent;
+
+      transition: all var(--transition-mid);
+      cursor: pointer;
+
+      &:hover {
+        border-color: var(--color-brand-yellow-mid);
+        background-color: var(--color-brand-blue-1000);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cardSocial {
+    justify-content: center;
+  }
+
+  .footerSocial {
+    text-align: center;
+    justify-content: center;
+    
+  }
+}
+
+@media (min-width: 769px) {
+  .cardSocial:hover::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    box-shadow: 100vw 100vh 10px 10000px rgba(0,0,0,.5);
+    transition: all var(--transition-mid);
+  }
+}
