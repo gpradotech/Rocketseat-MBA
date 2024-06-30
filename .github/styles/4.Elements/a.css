@@ -10,6 +10,19 @@
     text-decoration: none;
     color: var(--color-brand-yellow-mid, #F2CE1B);
   }
+
+  &.secondary {
+    color: var(--color-brand-blue-800, #1E40AF);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      content: url(../../assets/images/functional/icon-linkExternal-secondary.svg);
+    }
+  }
   
   &::after {
     content: url(../../assets/images/functional/icon-linkExternal.svg);

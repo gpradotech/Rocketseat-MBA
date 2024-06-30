@@ -1,0 +1,52 @@
+.cardProject {
+  background-color: white;
+  border-radius: .5rem;
+  padding: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: .5rem;
+
+  height: fit-content;
+  border: 2px solid transparent;
+
+  transition: all var(--transition-fast);
+
+  & .separator {
+    margin-top: 1rem;
+  }
+
+  &:hover {
+    border: 2px solid var(--color-brand-yellow-mid);
+
+    & .cardProject-coverImage {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.cardProject-coverContainer {
+  height: fit-content;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  border: 1px solid #05053D1a;
+}
+
+.cardProject-coverImage {
+  min-width: 100%;
+  transition: all var(--transition-fast);
+}
+
+.cardProject-text {
+  padding: 0.5rem 1rem 1rem;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+
+  & h2 {
+    min-height: 2.625rem;
+  }
+}

@@ -4,11 +4,13 @@
   padding: 1.5rem;
 
   margin-top: 2rem;
+  margin-bottom: 3rem;
 
   border: 2px solid transparent;
   position: relative;
   z-index: 10;
   transition: all var(--transition-mid);
+
 
   
   &:hover {

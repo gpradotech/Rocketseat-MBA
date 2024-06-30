@@ -1,13 +1,30 @@
 main {
+  padding-top: 1rem;
+
   grid-column: 2/3;
   grid-row: 1/4;
 
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+
+  min-height: fit-content;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 23.4375rem) {
   main {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 80rem) {
+  main {
+    padding-block: 4rem;
   }
 }

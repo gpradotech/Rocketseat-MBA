@@ -1,8 +1,6 @@
 .body {
   width: 100vw;
-  max-width: 64rem;
-
-  padding: 4rem 0 3rem;
+  max-width: clamp(64rem, 1vw, 100vw);
   margin-inline: auto;
 
   grid-template-columns: 1fr 2fr;
@@ -24,5 +22,12 @@
 @media (max-width: 23.4375rem) {
   .body {
     padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .body {
+    height: 100vh;
+    overflow: hidden;
   }
 }

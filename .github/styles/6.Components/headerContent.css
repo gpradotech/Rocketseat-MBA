@@ -48,11 +48,11 @@ a.headerTagline {
 }
 
 @media (max-width: 768px) {
-  header {
-    justify-content: center;
+  header > div {
+    margin-inline: auto;
   }
 
-  .headerTagline {
+  .headerTagline:not([href]) {
     margin-inline: auto;
     width: fit-content;
     flex-direction: column;
