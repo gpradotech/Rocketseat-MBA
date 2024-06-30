@@ -1,0 +1,23 @@
+.linkExternal {
+  color: var(--color-neutral-white);
+  font: var(--fw-regular) var(--fs-default)/1.25 var(--ff-sans);
+  display: flex;
+  text-decoration: underline;
+
+  transition: all 50ms;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--color-brand-yellow-mid, #F2CE1B);
+  }
+  
+  &::after {
+    content: url(../../assets/images/functional/icon-linkExternal.svg);
+    display: flex;
+    width: fit-content;
+    height: auto;
+    padding-left: 0.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

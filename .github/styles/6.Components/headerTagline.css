@@ -1,0 +1,9 @@
+.headerTagline {
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  font: var(--fw-regular) var(--fs-sm)/1.25 var(--ff-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  color: var(--color-brand-blue-200, #BFDBFE);
+}
