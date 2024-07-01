@@ -1,6 +1,7 @@
 .grid {
   display: grid;
   align-items: start;
+  align-content: center;
 }
 
 .flex {
