@@ -1,7 +1,12 @@
-.grid {
+.grid-center {
   display: grid;
   align-items: start;
   align-content: center;
+}
+
+.grid {
+  display: grid;
+  align-items: start;
 }
 
 .flex {
