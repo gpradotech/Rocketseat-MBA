@@ -9,8 +9,6 @@ main {
 
   min-height: fit-content;
   height: 100%;
-  overflow-y: scroll;
-  scrollbar-width: none;
 }
 
 main::-webkit-scrollbar {
@@ -26,5 +24,7 @@ main::-webkit-scrollbar {
 @media (min-width: 80rem) {
   main {
     padding-block: 4rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
 }
