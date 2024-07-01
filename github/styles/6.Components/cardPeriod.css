@@ -72,6 +72,6 @@ a:not(.half-visible) {
   }
 }
 
-a.half-visible {
+.half-visible {
   cursor: no-drop;
 }
