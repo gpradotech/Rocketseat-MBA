@@ -33,6 +33,9 @@
   object-fit: cover;
   border-radius: 0.25rem;
   border: 1px solid #05053D1a;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 
   & .cardProject-coverImage {
     min-width: 100%;
