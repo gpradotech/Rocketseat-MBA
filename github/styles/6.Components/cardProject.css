@@ -10,8 +10,6 @@
   height: 100%;
   border: 2px solid transparent;
 
-  transition: all var(--transition-fast);
-
   &:hover {
     border: 2px solid var(--color-brand-yellow-mid);
 
@@ -26,23 +24,23 @@
 }
 
 .cardProject-coverContainer {
+  width: inherit;
   height: fit-content;
   min-height: fit-content;
   overflow: hidden;
   aspect-ratio: 16/9;
-  object-fit: cover;
   border-radius: 0.25rem;
   border: 1px solid #05053D1a;
   display: flex;
   align-items: center;
   justify-items: center;
-
+  
   & .cardProject-coverImage {
+    object-fit: cover;
     min-width: 100%;
     height: 100%;
+    
     transition: all var(--transition-fast);
-    /* transform: scale(1.025); */
-    object-fit: cover;
   }
 }
   
