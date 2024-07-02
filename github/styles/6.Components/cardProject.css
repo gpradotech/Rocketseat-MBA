@@ -41,6 +41,7 @@
     min-width: 100%;
     height: 100%;
     transition: all var(--transition-fast);
+    transform: scale(1.025);
   }
 }
   
