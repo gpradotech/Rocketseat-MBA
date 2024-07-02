@@ -15,7 +15,7 @@ main::-webkit-scrollbar {
   display: none;
 }
 
-@media (max-width: 23.4375rem) {
+@media (max-width: 47.9375rem) {
   main {
     grid-template-columns: 1fr;
   }
