@@ -26,6 +26,7 @@
 }
 
 .cardProject-coverContainer {
+  height: fit-content;
   min-height: fit-content;
   overflow: hidden;
   aspect-ratio: 16/9;
