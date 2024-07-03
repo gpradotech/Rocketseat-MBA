@@ -55,11 +55,15 @@ aside {
 }
 
 @media (max-width: 47.9375rem) {
+  body {
+    overflow: scroll;
+  }
+  
   #app {
     display: flex;
     flex-direction: column-reverse;
-    overflow: scroll;
-    justify-content: flex-end;
+    /* overflow: visible; */
+    height: fit-content;
   }
 
   aside {
