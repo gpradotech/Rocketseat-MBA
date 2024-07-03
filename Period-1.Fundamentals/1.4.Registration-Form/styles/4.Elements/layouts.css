@@ -59,6 +59,7 @@ aside {
     display: flex;
     flex-direction: column-reverse;
     overflow: scroll;
+    justify-content: flex-end;
   }
 
   aside {
