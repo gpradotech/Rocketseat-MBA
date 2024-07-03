@@ -49,6 +49,7 @@ body {
   font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+  padding: 24px;
 }
 
 /* links */

@@ -1,5 +1,7 @@
 #primary {
   padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
   
   /* nesting css */
   div {
@@ -18,8 +20,29 @@
 }
 
 #secondary {
+  display: flex;
+  gap: 1rem;
   padding-block: 14px;
   border: solid 1px var(--stroke-color);
   border-inline: none;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  
+  & a {
+    line-break: anywhere;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  #primary div:nth-child(1),
+  #primary div:nth-child(3) {
+    display: none;
+  }
+
+  #primary {
+    display: flex;
+    justify-content: center;
+  }
+
 }
