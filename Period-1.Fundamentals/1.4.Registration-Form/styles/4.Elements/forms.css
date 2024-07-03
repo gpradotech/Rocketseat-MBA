@@ -103,3 +103,17 @@ input {
   display: flex;
   gap: 1rem;
 }
+
+@media (max-width: 47.9375rem) {
+  .actions-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    
+    
+    & .btn-secondary {
+      margin: 0;
+    }
+  }
+}
