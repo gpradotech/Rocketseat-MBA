@@ -184,10 +184,6 @@ aside {
     position: relative;
   }
 
-  h2 {
-    background: var(--bg-color);
-  }
-
   #weekly div, #ai div {
     grid-template-columns: 1fr;
   }
@@ -204,5 +200,9 @@ aside {
 
   #weekly header, #ai header, aside section header {
     justify-content: space-between;
+  }
+
+  .card::before {
+    display: none;
   }
 }
