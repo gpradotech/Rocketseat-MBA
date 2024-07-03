@@ -11,3 +11,10 @@ main img {
   height: 286px;
   object-fit: cover;
 }
+
+@media (max-width: 47.9375rem) {
+  main img {
+    width: 100vw;
+    aspect-ratio: 1/1;
+  }
+}
